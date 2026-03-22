@@ -1,7 +1,9 @@
 # 🧱 Marble Centre Management System
 
 ## 📌 Project Description
-The **Marble Centre Management System** is a web-based application designed to manage marble products, sales, customers, and orders efficiently. It helps businesses streamline operations, track inventory, and generate reports.
+The Marble Centre Management System is a web-based application developed to efficiently manage marble products, sales, customer information, and order processing. The system provides a centralized platform for handling daily business operations, enabling users to monitor inventory levels, manage transactions, and generate insightful reports.
+
+It enhances operational efficiency by automating manual tasks, reducing errors, and improving data organization. The application is designed with a user-friendly interface, making it easy for administrators and staff to manage business activities effectively.
 
 ---
 
