@@ -1,12 +1,28 @@
-# Marble Shop Management System
+# 🧱 Marble Centre Management System
 
-## 📌 Description
-This project is a web-based system to manage marble shop operations like sales, inventory, and billing.
+## 📌 Project Description
+The **Marble Centre Management System** is a web-based application designed to manage marble products, sales, customers, and orders efficiently. It helps businesses streamline operations, track inventory, and generate reports.
+
+---
 
 ## 🚀 Features
-- Product management
-- Billing system
-- Customer records
+- 🧱 Product & Category Management  
+- 📦 Inventory Tracking  
+- 🧾 Order & Sales Management  
+- 👤 Customer Management  
+- 💳 Payment Integration  
+- 📊 Reports & Analytics Dashboard  
+- 🔐 Secure Login System  
+
+---
+
+## 🛠️ Technologies Used
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Python / Django  
+- **Database:** SQLite / MySQL  
+- **Styling:** SCSS / CSS  
+
+---
 
 ## 🖼️ Screenshots
 
