@@ -1,0 +1,73 @@
+{% extends 'temp/adminbase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <style>
+        /* General table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse:collapse; /* Collapses borders into a single border */
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px;
+        }
+
+        /* Styling the table cells */
+        td {
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        /* Border styles for the table */
+        table, th, td {
+            border: 3px solid #000000; /* Light gray border */
+        }
+
+        h1 {
+            color: yellow;
+             font-size: 90px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #b21f2d;
+             font-size: 70px;
+            margin-bottom: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+	<center>
+		<h1 style="color: yellow">View Payment</h1>
+		<table border="1" class="table table-striped">
+			<tr style="color: white">
+				<td>User Name</td>
+				<td>Product Name</td>
+				<td>amount</td>
+				<td>date</td>
+
+			</tr>
+            {% for i in a %}
+			<tr style="color: white">
+				<td>{{ i.u.username }}</td>
+				<td>{{ i.o.p.p_name }}</td>
+				<td>{{ i.amount }}</td>
+				<td>{{ i.date_time }}</td>
+
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>
+{% endblock %}

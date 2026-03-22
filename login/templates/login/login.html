@@ -1,0 +1,102 @@
+{#{% extends 'temp/homebase.html' %}#}
+{#{% block base %}#}
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{##}
+{#	<title></title>#}
+{#</head>#}
+{#<body>#}
+{##}
+{#	<center>#}
+{#		<h1 style="color:yellow">LOGIN </h1>#}
+{#		<form method="post">#}
+{#            {% csrf_token %}#}
+{#			<table>#}
+{#				<tr>#}
+{#					<td>Username</td>#}
+{#					<td><input type="text" name="uname" required="" class="form-control"></td>#}
+{#				</tr>#}
+{#				<tr>#}
+{#					<td>Password</td>#}
+{#					<td><input type="Password" name="psw" required="" class="form-control"></td>#}
+{#				</tr>#}
+{#                <tr>#}
+{#					<td></td>#}
+{#					<td><input type="submit" value="LOGIN" style="color: black" class="btn btn-primary"  ></td>#}
+{#				</tr>#}
+{#			</table>#}
+{#		</form>#}
+{#	</center>#}
+{##}
+{#</body>#}
+{#</html>#}
+{#{% endblock %}#}
+
+
+
+
+
+
+
+{% extends 'temp/homebase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript">
+        // Function to display alert if there is a success message
+        window.onload = function() {
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.tags == 'success' %}
+                        alert("{{ message }}");
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        }
+    </script>
+</head>
+<body>
+
+    <center>
+        <h1 style="color:yellow">LOGIN </h1>
+        <form method="post">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="uname" required="" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="Password" name="psw" required="" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="LOGIN" style="color: black" class="btn btn-lg btn-secondary p-2 d-done d-lg-block"></td>
+                </tr>
+            </table>
+        </form>
+         <p style="color: black;">Don't have an account? <a href="/user/user/#aa" style="color: #6610f2;">Register here</a></p>
+    </center>
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

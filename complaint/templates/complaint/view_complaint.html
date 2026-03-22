@@ -1,0 +1,113 @@
+{% extends 'temp/adminbase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <style>
+        /* General table styling */
+         table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse:collapse; /* Collapses borders into a single border */
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styling the table cells */
+        td {
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        /* Border styles for the table */
+        table, th, td {
+            border: 3px solid #000000; /* Light gray border */
+        }
+
+        /* Different border styles for rows */
+        {#tr:nth-child(odd) {#}
+        {#    background-color: #444444; /* Dark background for odd rows */#}
+        {#}#}
+        {##}
+        {#tr:nth-child(even) {#}
+        {#    background-color: #444444; /* Slightly lighter dark background for even rows */#}
+        {#}#}
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #555555; /* Hover effect */
+        }
+
+        /* Table title style */
+        h1 {
+            color:black;
+             font-size: 90px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #b21f2d;
+             font-size: 70px;
+            margin-bottom: 50px;
+        }
+
+
+        /* Custom link styling for image proof */
+        a {
+            text-decoration: none; /* Remove underline from the image link */
+        }
+
+        /* Style for the image inside the link */
+        a img {
+            border-radius: 8px; /* Rounded corners for the image */
+            transition: transform 0.3s ease; /* Smooth scale effect */
+        }
+
+        a img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+
+    </style>
+</head>
+<body>
+	<center>
+		<h1 style="color: yellow">View Complaint</h1>
+		<table border="1" class="table table-striped">
+			<tr style="color: white">
+                <td>complaint_id</td>
+{#				<td>user_id</td>#}
+                <td>order</td>
+                <td>username</td>
+				<td>Complaint</td>
+				<td>Reply</td>
+				<td>Date</td>
+
+
+			</tr>
+            {% for i in b %}
+			<tr style="color: white">
+                <td>{{ i.c_id }}</td>
+                <td>{{ i.o_id }}</td>
+{#				<td>{{ i.u_id }}</td>#}
+{#                <td>{{ i.}}</td>#}
+                <td>{{ i.u.username }}</td>
+{#				<td>{{ i.o.p.p_name }}</td>#}
+				<td>{{ i.complaint }}</td>
+				<td>{{ i.reply }}</td>
+				<td>{{ i.date_time }}</td>
+                <td><a href="/complaint/replypost/{{ i.c_id }}" class="btn btn-primary">reply</a> </td>
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>
+{% endblock %}

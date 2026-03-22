@@ -1,0 +1,83 @@
+{% extends 'temp/userbase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<center>
+		<h1 style="color: yellow">CART</h1>
+		<form method="post">
+            {% csrf_token %}
+			<table>
+				<tr>
+					<td>Quantity</td>
+					<td><input type="text" name="qnty" required="" class="form-control"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><input type="submit" value="SUBMIT"></td>
+				</tr>
+			</table>
+		</form>
+	</center>
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+{#{% extends 'temp/userbase.html' %}#}
+{#{% block base %}#}
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#	<title></title>#}
+{#</head>#}
+{#<body>#}
+{#	<center>#}
+{#	<h1 style="color: yellow">CART</h1>#}
+{#		<form method="post">#}
+{#            {% csrf_token %}#}
+{#<table>#}
+{#				<tr>#}
+{#					<td>Quantity</td>#}
+{#					<td><input type="text" name="qnty" required="" class="form-control"></td>#}
+{#				</tr>#}
+{#<div class="cart-items">#}
+{##}
+{#        {% for cart_item in cart_items %}#}
+{#        <div class="cart-item">#}
+{#            {% if request.user == cart_item.user %}#}
+{#            <h3>{{ cart_item.cake.name }}</h3>#}
+{#            <p>{{ cart_item.cake.description }}</p>#}
+{#            <div class="cart-buttons">#}
+{#                <select class="payment-dropdown">#}
+{#                    <option value="">------Select Payment------</option>#}
+{#                    <option value="">Online Payment</option>#}
+{#                    <option value="">Cash on Delivery</option>#}
+{#                </select>#}
+{#                <a class="yellow-button" href="{% url 'remove_from_cart' pk=cart_item.pk %}">Remove from Cart</a>#}
+{#            </div>#}
+{##}
+{#    </div>#}
+{#</div>#}
+{#</table>#}
+{#        </form>#}
+{#    </center>#}
+{##}
+{#</body>#}
+{#</html>#}
+{#{% endblock %}#}

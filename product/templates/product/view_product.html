@@ -1,0 +1,88 @@
+{% extends 'temp/adminbase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+     <style>
+        /* General table styling */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse:collapse; /* Collapses borders into a single border */
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: #4CAF50;
+            color: black;
+            padding: 10px;
+        }
+
+        /* Styling the table cells */
+        td {
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        /* Border styles for the table */
+        table, th, td {
+            border: 3px solid #6f42c1; /* Light gray border */
+        }
+
+        /* Different border styles for rows */
+        tr:nth-child(odd) {
+            background-color: #333333; /* Dark background for odd rows */
+        }
+
+        tr:nth-child(even) {
+            background-color: #444444; /* Slightly lighter dark background for even rows */
+        }
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #555555; /* Hover effect */
+        }
+
+        /* Table title style */
+        h1 {
+            color: yellow;
+             font-size: 90px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #b21f2d;
+             font-size: 70px;
+            margin-bottom: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+	<center>
+		<h1 style="color: yellow">View product</h1>
+		<table border="1">
+			<tr>
+				<td>Name</td>
+				<td>Image</td>
+				<td>Price</td>
+                <td>Flavor</td>
+				
+			</tr>
+            {% for i in a %}
+			<tr>
+				<td>{{ i.p_name }}</td>
+				<td><img src="/static/{{ i.p_image }}" height="200px" width="200px"></td>
+                <<td>{{ i.p_price }} </td>
+                <td>{{ i.p_flavor }}</td>
+			
+			</tr>
+            {% endfor %}
+		</table>
+	</center>
+
+</body>
+</html>
+{% endblock %}

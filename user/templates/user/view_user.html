@@ -1,0 +1,429 @@
+{#{% extends 'temp/adminbase.html' %}#}
+{#{% block base %}#}
+{#<!DOCTYPE html>#}
+{#<html>#}
+{#<head>#}
+{#	<title></title>#}
+{#     <style>#}
+{#        /* General table styling */#}
+{#        table {#}
+{#            width: 80%;#}
+{#            margin: 20px auto;#}
+{#            border-collapse:collapse; /* Collapses borders into a single border */#}
+{#        }#}
+{##}
+{#        /* Styling the table headers */#}
+{#        th {#}
+{#            background-color: #4CAF50;#}
+{#            color: black;#}
+{#            padding: 10px;#}
+{#        }#}
+{##}
+{#        /* Styling the table cells */#}
+{#        td {#}
+{#            padding: 10px;#}
+{#            text-align: center;#}
+{#            color: black;#}
+{#        }#}
+{##}
+{#        /* Border styles for the table */#}
+{#        table, th, td {#}
+{#            border: 3px solid #6f42c1; /* Light gray border */#}
+{#        }#}
+{##}
+{#        /* Different border styles for rows */#}
+{#        tr:nth-child(odd) {#}
+{#            background-color: #333333; /* Dark background for odd rows */#}
+{#        }#}
+{##}
+{#        tr:nth-child(even) {#}
+{#            background-color: #444444; /* Slightly lighter dark background for even rows */#}
+{#        }#}
+{##}
+{#        /* Hover effect for rows */#}
+{#        tr:hover {#}
+{#            background-color: #555555; /* Hover effect */#}
+{#        }#}
+{##}
+{#        /* Table title style */#}
+{#        h1 {#}
+{#            color: yellow;#}
+{#             font-size: 90px;#}
+{#            margin-bottom: 50px;#}
+{#        }#}
+{#        h2 {#}
+{#            color: #b21f2d;#}
+{#             font-size: 70px;#}
+{#            margin-bottom: 50px;#}
+{#        }#}
+{##}
+{##}
+{#    </style>#}
+{#</head>#}
+{#<body>#}
+{#	<center>#}
+{#		<h1 style="color: yellow">View User</h1>#}
+{#		<table border="1" class="table table-striped">#}
+{#			<tr style="color: white">#}
+{#				<td>Name</td>#}
+{#				<td>place</td>#}
+{#                <td>post</td>#}
+{#                <td>district</td>#}
+{#				<td>Phone</td>#}
+{#				<td>Email</td>#}
+{#				<td>Proof</td>#}
+{#			</tr>#}
+{#            {% for i in a %}#}
+{#			<tr style="color: white">#}
+{#				<td>{{ i.username }}</td>#}
+{#				<td>{{ i.u_place }}</td>#}
+{#				<td>{{ i.u_post }}</td>#}
+{#				<td>{{ i.u_district }}</td>#}
+{#				<td>{{ i.u_phone }}</td>#}
+{#                <td>{{ i.u_email }}</td>#}
+{#                <td><a href="/static/{{ i.u_proof }}"><img src="/static/{{ i.u_proof }}" width="100" height="100"></a> </td>#}
+{#			</tr>#}
+{#            {% endfor %}#}
+{#		</table>#}
+{#	</center>#}
+{##}
+{#</body>#}
+{#</html>#}
+{#{% endblock %}#}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{#{% extends 'temp/adminbase.html' %}#}
+{#{% block base %}#}
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1.0">#}
+{#    <title>View User</title>#}
+{#    <style>#}
+{#        /* General table styling */#}
+{#        table {#}
+{#            width: 80%;#}
+{#            margin: 20px auto;#}
+{#            border-collapse: collapse; /* Collapses borders into a single border */#}
+{#        }#}
+{##}
+{#        /* Styling the table headers */#}
+{#        th {#}
+{#            background-color: #4CAF50; /* Green background for headers */#}
+{#            color: white; /* White text color */#}
+{#            padding: 10px;#}
+{#            font-size: 18px; /* Increase font size for readability */#}
+{#        }#}
+{##}
+{#        /* Styling the table cells */#}
+{#        td {#}
+{#            padding: 10px;#}
+{#            text-align: center;#}
+{#            color: white; /* White text color for table data */#}
+{#        }#}
+{##}
+{#        /* Border styles for the table */#}
+{#        table, th, td {#}
+{#            border: 3px solid #6f42c1; /* Purple border */#}
+{#        }#}
+{##}
+{#        /* Alternate row background colors */#}
+{#        tr:nth-child(odd) {#}
+{#            background-color: #333333; /* Dark background for odd rows */#}
+{#        }#}
+{##}
+{#        tr:nth-child(even) {#}
+{#            background-color: #444444; /* Slightly lighter dark background for even rows */#}
+{#        }#}
+{##}
+{#        /* Hover effect for rows */#}
+{#        tr:hover {#}
+{#            background-color: #555555; /* Hover effect on rows */#}
+{#        }#}
+{##}
+{#        /* Title style */#}
+{#        h1 {#}
+{#            color: yellow;#}
+{#            font-size: 90px;#}
+{#            margin-bottom: 50px;#}
+{#            font-family: Arial, sans-serif;#}
+{#        }#}
+{##}
+{#        h2 {#}
+{#            color: #b21f2d;#}
+{#            font-size: 70px;#}
+{#            margin-bottom: 50px;#}
+{#            font-family: Arial, sans-serif;#}
+{#        }#}
+{##}
+{#        /* Custom link styling for image proof */#}
+{#        a {#}
+{#            text-decoration: none; /* Remove underline from the image link */#}
+{#        }#}
+{##}
+{#        /* Style for the image inside the link */#}
+{#        a img {#}
+{#            border-radius: 8px; /* Rounded corners for the image */#}
+{#            transition: transform 0.3s ease; /* Smooth scale effect */#}
+{#        }#}
+{##}
+{#        a img:hover {#}
+{#            transform: scale(1.1); /* Slight zoom effect on hover */#}
+{#        }#}
+{##}
+{#    </style>#}
+{#</head>#}
+{#<body>#}
+{#    <center>#}
+{#        <h1>View User</h1>#}
+{#        <table border="1" class="table table-striped">#}
+{#            <tr>#}
+{#                <th>Name</th>#}
+{#                <th>Place</th>#}
+{#                <th>Post</th>#}
+{#                <th>District</th>#}
+{#                <th>Phone</th>#}
+{#                <th>Email</th>#}
+{#                <th>Proof</th>#}
+{#            </tr>#}
+{#            {% for i in a %}#}
+{#            <tr>#}
+{#                <td>{{ i.username }}</td>#}
+{#                <td>{{ i.u_place }}</td>#}
+{#                <td>{{ i.u_post }}</td>#}
+{#                <td>{{ i.u_district }}</td>#}
+{#                <td>{{ i.u_phone }}</td>#}
+{#                <td>{{ i.u_email }}</td>#}
+{#                <td>#}
+{#                    <a href="/static/{{ i.u_proof }}">#}
+{#                        <img src="/static/{{ i.u_proof }}" width="100" height="100" alt="Proof Image">#}
+{#                    </a>#}
+{#                </td>#}
+{#            </tr>#}
+{#            {% endfor %}#}
+{#        </table>#}
+{#    </center>#}
+{#</body>#}
+{#</html>#}
+{#{% endblock %}#}
+
+
+
+
+
+
+
+
+{% extends 'temp/adminbase.html' %}
+{% block base %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i>View User</i></title>
+    <style>
+        /* General table styling */
+        {#table {#}
+        {#    width: 80%;#}
+        {#    margin: 20px auto;#}
+        {#    border-collapse: collapse; /* Collapses borders into a single border */#}
+        {#}#}
+
+        /* Styling the table headers */
+        {#th {#}
+        {#    color: white; /* White text color */#}
+        {#    padding: 10px;#}
+        {#    font-size: 18px; /* Increase font size for readability */#}
+        {#}#}
+
+        /* Custom header colors using nth-child */
+        {#th:nth-child(1) {#}
+        {#    background-color: #32CD32; /* Tomato color for Name */#}
+        {#}#}
+        {#th:nth-child(2) {#}
+        {#    background-color: #32CD32; /* SteelBlue color for Place */#}
+        {#}#}
+        {#th:nth-child(3) {#}
+        {#    background-color: #32CD32; /* LimeGreen color for Post */#}
+        {#}#}
+        {#th:nth-child(4) {#}
+        {#    background-color: #32CD32; /* Gold color for District */#}
+        {#}#}
+        {#th:nth-child(5) {#}
+        {#    background-color: #32CD32; /* BlueViolet color for Phone */#}
+        {#}#}
+        {#th:nth-child(6) {#}
+        {#    background-color: #32CD32; /* Crimson color for Email */#}
+        {#}#}
+        {#th:nth-child(7) {#}
+        {#    background-color: #32CD32; /* Indigo color for Proof */#}
+        {#}#}
+
+        /* Styling the table cells */
+        {#td {#}
+        {#    padding: 10px;#}
+        {#    text-align: center;#}
+        {#    color: white; /* White text color for table data */#}
+        }
+
+        /* Border styles for the table */
+        {#table, th, td {#}
+        {#    border: 3px solid #000000; /* Purple border */#}
+        {#}#}
+
+        /* Alternate row background colors */
+        {#tr:nth-child(odd) {#}
+        {#    background-color: #333333; /* Dark background for odd rows */#}
+        {#}#}
+
+        {#tr:nth-child(even) {#}
+        {#    background-color: #444444; /* Slightly lighter dark background for even rows */#}
+        {#}#}
+
+        /* Hover effect for rows */
+        {#tr:hover {#}
+        {#    background-color: #000000; /* Hover effect on rows */#}
+        {#}#}
+
+        /* Title style */
+        {#h1 {#}
+        {#    color: yellow;#}
+        {#    font-size: 90px;#}
+        {#    margin-bottom: 50px;#}
+        {#    font-family: Arial, sans-serif;#}
+        {#}#}
+        {##}
+        {#h2 {#}
+        {#    color: #b21f2d;#}
+        {#    font-size: 70px;#}
+        {#    margin-bottom: 50px;#}
+        {#    font-family: Arial, sans-serif;#}
+        {#}#}
+
+
+
+
+         table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse:collapse; /* Collapses borders into a single border */
+        }
+
+        /* Styling the table headers */
+        th {
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Styling the table cells */
+        td {
+            padding: 10px;
+            text-align: center;
+            color: black;
+        }
+
+        /* Border styles for the table */
+        table, th, td {
+            border: 3px solid #000000; /* Light gray border */
+        }
+
+        /* Different border styles for rows */
+        {#tr:nth-child(odd) {#}
+        {#    background-color: #444444; /* Dark background for odd rows */#}
+        {#}#}
+        {##}
+        {#tr:nth-child(even) {#}
+        {#    background-color: #444444; /* Slightly lighter dark background for even rows */#}
+        {#}#}
+
+        /* Hover effect for rows */
+        tr:hover {
+            background-color: #555555; /* Hover effect */
+        }
+
+        /* Table title style */
+        h1 {
+            color:black;
+             font-size: 90px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #b21f2d;
+             font-size: 70px;
+            margin-bottom: 50px;
+        }
+
+
+        /* Custom link styling for image proof */
+        a {
+            text-decoration: none; /* Remove underline from the image link */
+        }
+
+        /* Style for the image inside the link */
+        a img {
+            border-radius: 8px; /* Rounded corners for the image */
+            transition: transform 0.3s ease; /* Smooth scale effect */
+        }
+
+        a img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>View User</h1>
+        <table border="1" class="table table-striped">
+            <tr>
+                <th>user_id</th>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Post</th>
+                <th>District</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            {% for i in a %}
+            <tr>
+                <td>{{ i.u_id }}</td>
+                <td>{{ i.username }}</td>
+                <td>{{ i.u_place }}</td>
+                <td>{{ i.u_post }}</td>
+                <td>{{ i.u_district }}</td>
+                <td>{{ i.u_phone }}</td>
+                <td>{{ i.u_email }}</td>
+{#                <td>#}
+{#                    <a href="/static/{{ i.u_proof }}">#}
+{#                        <img src="/static/{{ i.u_proof }}" width="100" height="100" alt="Proof Image">#}
+{#                    </a>#}
+{#                </td>#}
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
+{% endblock %}
+
