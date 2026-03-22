@@ -10,6 +10,8 @@ This project is a web-based system to manage marble shop operations like sales, 
 
 ## 🖼️ Screenshots
 
+## 📸 Project Screenshots
+
 ### Home Page
 ![Dashboard](Screenshot%202026-03-23%20002738.png)
 ![Sales](Screenshot%202026-03-23%20002752.png)
@@ -21,19 +23,7 @@ This project is a web-based system to manage marble shop operations like sales, 
 
 
 
-## 📸 Project Screenshots
 
-### 🔹 Dashboard
-![Dashboard](Screenshot%202026-03-23%20002738.png)
-
-### 🔹 Sales Page
-![Sales](Screenshot%202026-03-23%20002752.png)
-
-### 🔹 Order Management
-![Orders](Screenshot%202026-03-23%20002805.png)
-
-### 🔹 Reports
-![Reports](Screenshot%202026-03-23%20002817.png)
 
 ### 🔹 Admin Home page
 ![Product](Screenshot%202026-03-23%20002844.png)
