@@ -32,22 +32,23 @@ It enhances operational efficiency by automating manual tasks, reducing errors, 
 
 <h3>🏠 Home Page</h3>
 
-<p align="center">
+<h3>🔹 Admin Home Page</h3>
+<p>
   <img src="Screenshot%202026-03-23%20002738.png" width="300"><br>
   <b>Dashboard</b>
 </p>
-
-<p align="center">
+<h3>🔹 Admin Home Page</h3>
+<p>
   <img src="Screenshot%202026-03-23%20002752.png" width="300"><br>
   <b>Sales</b>
 </p>
-
-<p align="center">
+<h3>🔹 Admin Home Page</h3>
+<p>
   <img src="Screenshot%202026-03-23%20002805.png" width="300"><br>
   <b>Orders</b>
 </p>
-
-<p align="center">
+<h3>🔹 Admin Home Page</h3>
+<p>
   <img src="Screenshot%202026-03-23%20002817.png" width="300"><br>
   <b>Reports</b>
 </p>
