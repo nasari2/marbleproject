@@ -7,6 +7,17 @@ It enhances operational efficiency by automating manual tasks, reducing errors, 
 
 ---
 
+
+
+## 🌐 Live Demo
+
+[Link 🔗](https://your-project-link.com)
+
+
+
+
+
+
 ## 🚀 Features
 - 🧱 Product & Category Management  
 - 📦 Inventory Tracking  
