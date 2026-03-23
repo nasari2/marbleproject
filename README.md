@@ -40,51 +40,95 @@ It enhances operational efficiency by automating manual tasks, reducing errors, 
 
 
 
-### 🔹 Admin Home page
-![Product](Screenshot%202026-03-23%20002844.png)
+<h3>🔹 Admin Home Page</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20002844.png" width="400">
+</p>
 
-### 🔹 User Home Page
-![Login](Screenshot%202026-03-23%20002910.png)
+<h3>🔹 User Home Page</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20002910.png" width="400">
+</p>
 
-### 🔹 Delivery Boy Home Page
-![Payment](Screenshot%202026-03-23%20002927.png)
+<h3>🔹 Delivery Boy Home Page</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20002927.png" width="400">
+</p>
 
-### 🔹 User Registration
-![Users](Screenshot%202026-03-23%20003002.png)
+<h3>🔹 User Registration</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003002.png" width="400">
+</p>
 
-### 🔹 Delivery Boy Registration
-![Stats](Screenshot%202026-03-23%20003022.png)
+<h3>🔹 Delivery Boy Registration</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003022.png" width="400">
+</p>
 
-### 🔹 Add Product
-![Event](Screenshot%202026-03-23%20003037.png)
+<h3>🔹 Add Product</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003037.png" width="400">
+</p>
 
----
+<h3>🔹 Add Vehicle</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003049.png" width="400">
+</p>
 
-### 🔹 Add Vehicle
+<h3>🔹 View User</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003104.png" width="400">
+</p>
 
-![Screen1](Screenshot%202026-03-23%20003049.png)
-### 🔹 View User
-![Screen2](Screenshot%202026-03-23%20003104.png)
-### 🔹 Products
-![Screen3](Screenshot%202026-03-23%20003120.png)
-### 🔹 Card Details
-![Screen4](Screenshot%202026-03-23%20003133.png)
-### 🔹 View Order Details
-![Screen5](Screenshot%202026-03-23%20003150.png)
-### 🔹 View Payment
-![Screen6](Screenshot%202026-03-23%20003209.png)
-### 🔹 View Complaint 
-![Screen7](Screenshot%202026-03-23%20003223.png)
-### 🔹 View Reply
-![Screen8](Screenshot%202026-03-23%20003239.png)
-### 🔹 View Delivery Status
-![Screen9](Screenshot%202026-03-23%20003253.png)
-### 🔹 View Rating
-![Screen10](Screenshot%202026-03-23%20003306.png)
-### 🔹 View Otp
-![Screen11](Screenshot%202026-03-23%20003321.png)
-### 🔹 View Assigned Work
-![Screen12](Screenshot%202026-03-23%20003338.png)
+<h3>🔹 Products</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003120.png" width="400">
+</p>
+
+<h3>🔹 Card Details</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003133.png" width="400">
+</p>
+
+<h3>🔹 View Order Details</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003150.png" width="400">
+</p>
+
+<h3>🔹 View Payment</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003209.png" width="400">
+</p>
+
+<h3>🔹 View Complaint</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003223.png" width="400">
+</p>
+
+<h3>🔹 View Reply</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003239.png" width="400">
+</p>
+
+<h3>🔹 View Delivery Status</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003253.png" width="400">
+</p>
+
+<h3>🔹 View Rating</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003306.png" width="400">
+</p>
+
+<h3>🔹 View OTP</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003321.png" width="400">
+</p>
+
+<h3>🔹 View Assigned Work</h3>
+<p align="center">
+  <img src="Screenshot%202026-03-23%20003338.png" width="400">
+</p>
 
 ---
 
