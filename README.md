@@ -41,7 +41,7 @@ It enhances operational efficiency by automating manual tasks, reducing errors, 
 
 
 <h3>🔹 Admin Home Page</h3>
-<p align="center">
+<p>
   <img src="Screenshot%202026-03-23%20002844.png" width="400">
 </p>
 
